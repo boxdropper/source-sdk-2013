@@ -19,6 +19,12 @@ $Project "client"
 	"game\client\client_episodic.vpc"	[($WIN32||$X360||$POSIX) && $EPISODIC]
 }
 
+$Project "gamepadui"
+{
+	"game\gamepadui\gamepadui_hl2.vpc" [($WIN32) && $HL2]
+	"game\gamepadui\gamepadui_episodic.vpc" [($WIN32) && $EPISODIC]
+}
+
 $Project "fgdlib"
 {
 	"fgdlib\fgdlib.vpc" [$WIN32]
